@@ -28,3 +28,12 @@ def get_avg_grade(students, grades):
     total = sum(grades)
     average = total / nb_of_students
     return average
+
+
+def get_heighest_grade(students, grades):
+    index = 0
+    for i in range(1, len(grades)):
+        if grades[i] > grades[index]:
+            index = i
+
+    return students[index], grades[index]
