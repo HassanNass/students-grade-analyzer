@@ -1,0 +1,20 @@
+
+def student_name_grade():
+    students = []
+    grades = []
+    
+    while True:
+        name = input("Enter the name of the student(enter 'done' if finished): ")
+        if name.lower() == "done":
+            break
+        else:
+            grade = int(input("Enter the grade of the student (out of 100): "))
+            if grade < 0 or grade > 100:
+                print("Invalid input. The grade must be out of 100.")
+            else:
+                students.append(name)
+                grades.append(grade)
+
+    return students, grades
+
+
