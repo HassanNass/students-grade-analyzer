@@ -21,3 +21,10 @@ def student_name_grade():
 def display_student_summary(students, grades):
     for i in range(len(students)):
         print(f"{students[i]}: {grades[i]}")
+
+
+def get_avg_grade(students, grades):
+    nb_of_students = len(students)
+    total = sum(grades)
+    average = total / nb_of_students
+    return average
