@@ -45,3 +45,13 @@ def count_passed(students, grades):
         if grade >= 60:
             passed += 1
     return passed
+
+
+students, grades = student_name_grade()
+display_student_summary(students, grades)
+average = get_avg_grade(students, grades)
+print(f"The average grade of the class is {average:.2f}")
+highest_student, highest_grade = get_heighest_grade(students, grades)
+print(f"The student that had the highest grade in the class : {highest_student}with {highest_grade}")
+student_passed = count_passed(students, grades)
+print(f"The number of students that passed : {student_passed}")
