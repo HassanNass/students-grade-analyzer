@@ -37,3 +37,11 @@ def get_heighest_grade(students, grades):
             index = i
 
     return students[index], grades[index]
+
+
+def count_passed(students, grades):
+    passed = 0
+    for grade in grades:
+        if grade >= 60:
+            passed += 1
+    return passed
