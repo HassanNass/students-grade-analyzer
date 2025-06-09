@@ -18,3 +18,6 @@ def student_name_grade():
     return students, grades
 
 
+def display_student_summary(students, grades):
+    for i in range(len(students)):
+        print(f"{students[i]}: {grades[i]}")
